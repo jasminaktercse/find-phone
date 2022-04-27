@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Phone</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+     
+</head>
+<body >
+
+    <h1 class="text-center my-3 text-secondary">Find Phone</h1>
+    
+     <!-- phone search area -->
+     <div class="input-group my-5 w-50 mx-auto">
+        <input id="find-field" type="text" class="form-control" placeholder="Find the phone you want" >
+        <button class="btn btn-outline-secondary" type="button"
+            id="button-find" onclick="findPhone()">Find</button>
+    </div>
+
+    <!-- Phone Detailse Area -->
+    <div class="container" id="phone-details">    </div>
+
+    <!-- Find Result -->  
+    <div class="container my-5">
+        <div id="find-result" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </div>
+     
+   
+    <!-- Message -->
+    <h3 id="message" class="text-center text-danger"></h3>
+
+  
+
+    
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+<script>
+    document.addEventListener("contextmenu", function(event){
+    event.preventDefault(); 
+    }, false);
+</script>
+
+
+</body>
+</html>
